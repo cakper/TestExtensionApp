@@ -11,6 +11,14 @@ import Social
 
 class ShareViewController: SLComposeServiceViewController {
 
+    var testService: TestService!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.testService.printName()
+    }
+
     override func isContentValid() -> Bool {
         // Do validation of contentText and/or NSExtensionContext attachments here
         return true

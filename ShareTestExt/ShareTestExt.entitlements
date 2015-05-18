@@ -8,7 +8,7 @@
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.inviqa.TestExtensionApp</string>
+		<string>$(AppIdentifierPrefix)com.inviqa.TestExtensionApp.ShareTestExt</string>
 	</array>
 </dict>
 </plist>

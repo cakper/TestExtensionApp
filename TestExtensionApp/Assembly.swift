@@ -21,5 +21,11 @@ class Assembly: TyphoonAssembly {
         return TyphoonDefinition.withClass(TestService.self) { definition in
         }
     }
-    
+
+    dynamic func getShareViewController() -> AnyObject {
+        return TyphoonDefinition.withClass(ShareViewController.self) { definition in
+            definition.injectProperty("testService", with: self.getTestService())
+        }
+    }
+
 }
