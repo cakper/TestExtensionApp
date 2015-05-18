@@ -14,6 +14,9 @@
 		2530EEC01B09EC98009CBEB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2530EEBE1B09EC98009CBEB0 /* LaunchScreen.xib */; };
 		2530EECC1B09EC98009CBEB0 /* TestExtensionAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530EECB1B09EC98009CBEB0 /* TestExtensionAppTests.swift */; };
 		2530EED61B09EE07009CBEB0 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530EED51B09EE07009CBEB0 /* Assembly.swift */; };
+		2530EEE01B09F06A009CBEB0 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2530EEDF1B09F06A009CBEB0 /* ShareViewController.swift */; };
+		2530EEE21B09F06A009CBEB0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2530EEE11B09F06A009CBEB0 /* MainInterface.storyboard */; };
+		2530EEE51B09F06A009CBEB0 /* ShareTestExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2530EEDB1B09F06A009CBEB0 /* ShareTestExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		40B44F152D5F64C0762A14E0 /* Pods_TestExtensionApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49ACC7CF0E736AB00BCA0912 /* Pods_TestExtensionApp.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -25,7 +28,28 @@
 			remoteGlobalIDString = 2530EEAF1B09EC98009CBEB0;
 			remoteInfo = TestExtensionApp;
 		};
+		2530EEE31B09F06A009CBEB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2530EEA81B09EC98009CBEB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2530EEDA1B09F06A009CBEB0;
+			remoteInfo = ShareTestExt;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2530EEE91B09F06A009CBEB0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2530EEE51B09F06A009CBEB0 /* ShareTestExt.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2530EEB01B09EC98009CBEB0 /* TestExtensionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestExtensionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +63,11 @@
 		2530EECA1B09EC98009CBEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2530EECB1B09EC98009CBEB0 /* TestExtensionAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestExtensionAppTests.swift; sourceTree = "<group>"; };
 		2530EED51B09EE07009CBEB0 /* Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		2530EEDB1B09F06A009CBEB0 /* ShareTestExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareTestExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2530EEDE1B09F06A009CBEB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2530EEDF1B09F06A009CBEB0 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		2530EEE11B09F06A009CBEB0 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		2530EEEA1B09F2F9009CBEB0 /* TestExtensionApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TestExtensionApp.entitlements; sourceTree = "<group>"; };
 		49ACC7CF0E736AB00BCA0912 /* Pods_TestExtensionApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestExtensionApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7C211F6A4364718D9D06AE3 /* Pods-TestExtensionApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestExtensionApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestExtensionApp/Pods-TestExtensionApp.release.xcconfig"; sourceTree = "<group>"; };
 		FBD2E524977818B6D2AE81CB /* Pods-TestExtensionApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestExtensionApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestExtensionApp/Pods-TestExtensionApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +89,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2530EED81B09F06A009CBEB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -68,6 +104,7 @@
 			children = (
 				2530EEB21B09EC98009CBEB0 /* TestExtensionApp */,
 				2530EEC81B09EC98009CBEB0 /* TestExtensionAppTests */,
+				2530EEDC1B09F06A009CBEB0 /* ShareTestExt */,
 				2530EEB11B09EC98009CBEB0 /* Products */,
 				34EF49A91564E9CB37614CAF /* Pods */,
 				8ABA4ACC178F008B787321E6 /* Frameworks */,
@@ -79,6 +116,7 @@
 			children = (
 				2530EEB01B09EC98009CBEB0 /* TestExtensionApp.app */,
 				2530EEC51B09EC98009CBEB0 /* TestExtensionAppTests.xctest */,
+				2530EEDB1B09F06A009CBEB0 /* ShareTestExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +124,7 @@
 		2530EEB21B09EC98009CBEB0 /* TestExtensionApp */ = {
 			isa = PBXGroup;
 			children = (
+				2530EEEA1B09F2F9009CBEB0 /* TestExtensionApp.entitlements */,
 				2530EEB51B09EC98009CBEB0 /* AppDelegate.swift */,
 				2530EEB71B09EC98009CBEB0 /* ViewController.swift */,
 				2530EEB91B09EC98009CBEB0 /* Main.storyboard */,
@@ -122,6 +161,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2530EEDC1B09F06A009CBEB0 /* ShareTestExt */ = {
+			isa = PBXGroup;
+			children = (
+				2530EEDF1B09F06A009CBEB0 /* ShareViewController.swift */,
+				2530EEE11B09F06A009CBEB0 /* MainInterface.storyboard */,
+				2530EEDD1B09F06A009CBEB0 /* Supporting Files */,
+			);
+			path = ShareTestExt;
+			sourceTree = "<group>";
+		};
+		2530EEDD1B09F06A009CBEB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2530EEDE1B09F06A009CBEB0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		34EF49A91564E9CB37614CAF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,10 +209,12 @@
 				2530EEAE1B09EC98009CBEB0 /* Resources */,
 				45E780AF9580888CB47C449B /* Embed Pods Frameworks */,
 				EC49F6BDC269BDE7F73C5345 /* Copy Pods Resources */,
+				2530EEE91B09F06A009CBEB0 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2530EEE41B09F06A009CBEB0 /* PBXTargetDependency */,
 			);
 			name = TestExtensionApp;
 			productName = TestExtensionApp;
@@ -180,6 +239,23 @@
 			productReference = 2530EEC51B09EC98009CBEB0 /* TestExtensionAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		2530EEDA1B09F06A009CBEB0 /* ShareTestExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2530EEE61B09F06A009CBEB0 /* Build configuration list for PBXNativeTarget "ShareTestExt" */;
+			buildPhases = (
+				2530EED71B09F06A009CBEB0 /* Sources */,
+				2530EED81B09F06A009CBEB0 /* Frameworks */,
+				2530EED91B09F06A009CBEB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareTestExt;
+			productName = ShareTestExt;
+			productReference = 2530EEDB1B09F06A009CBEB0 /* ShareTestExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -191,10 +267,19 @@
 				TargetAttributes = {
 					2530EEAF1B09EC98009CBEB0 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 2BRU7567J4;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					2530EEC41B09EC98009CBEB0 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 2530EEAF1B09EC98009CBEB0;
+					};
+					2530EEDA1B09F06A009CBEB0 = {
+						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
 			};
@@ -213,6 +298,7 @@
 			targets = (
 				2530EEAF1B09EC98009CBEB0 /* TestExtensionApp */,
 				2530EEC41B09EC98009CBEB0 /* TestExtensionAppTests */,
+				2530EEDA1B09F06A009CBEB0 /* ShareTestExt */,
 			);
 		};
 /* End PBXProject section */
@@ -232,6 +318,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2530EED91B09F06A009CBEB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2530EEE21B09F06A009CBEB0 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +398,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2530EED71B09F06A009CBEB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2530EEE01B09F06A009CBEB0 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -311,6 +413,11 @@
 			isa = PBXTargetDependency;
 			target = 2530EEAF1B09EC98009CBEB0 /* TestExtensionApp */;
 			targetProxy = 2530EEC61B09EC98009CBEB0 /* PBXContainerItemProxy */;
+		};
+		2530EEE41B09F06A009CBEB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2530EEDA1B09F06A009CBEB0 /* ShareTestExt */;
+			targetProxy = 2530EEE31B09F06A009CBEB0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -422,6 +529,8 @@
 			baseConfigurationReference = FBD2E524977818B6D2AE81CB /* Pods-TestExtensionApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestExtensionApp/TestExtensionApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestExtensionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -433,6 +542,8 @@
 			baseConfigurationReference = B7C211F6A4364718D9D06AE3 /* Pods-TestExtensionApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TestExtensionApp/TestExtensionApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TestExtensionApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,6 +584,30 @@
 			};
 			name = Release;
 		};
+		2530EEE71B09F06A009CBEB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShareTestExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2530EEE81B09F06A009CBEB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ShareTestExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -502,6 +637,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		2530EEE61B09F06A009CBEB0 /* Build configuration list for PBXNativeTarget "ShareTestExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2530EEE71B09F06A009CBEB0 /* Debug */,
+				2530EEE81B09F06A009CBEB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

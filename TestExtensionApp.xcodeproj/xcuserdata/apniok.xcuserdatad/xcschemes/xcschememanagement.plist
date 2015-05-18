@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ShareTestExt.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>TestExtensionApp.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>2530EEC41B09EC98009CBEB0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2530EEDA1B09F06A009CBEB0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
